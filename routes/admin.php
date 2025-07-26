@@ -27,4 +27,6 @@ Route::prefix('admin')->middleware('auth')->group(function () {
 
     Route::post('logout', [LoginAdminController::class, 'logout']);
 
+    require_once 'products.php';
+
 });

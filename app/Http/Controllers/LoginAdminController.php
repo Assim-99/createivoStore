@@ -27,7 +27,7 @@ class LoginAdminController extends Controller
         if (Auth::attempt($data, $remember)) {
             return redirect('admin/index');
         }
-        return redirect()->route('login');
+        return redirect()->route('login')->with('statLog', 'Cheack Your Data ! ');
     }
 
 
