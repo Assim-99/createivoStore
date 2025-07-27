@@ -1,0 +1,83 @@
+
+========================= insert Code in brand table ============= 
+
+    $brands = [
+        "Samsung",
+        "Sony",
+        "LG",
+        "Nike",
+        "Adidas",
+        "Levi's",
+        "Zara",
+        "H&M",
+        "Forever 21",
+        "Bosch",
+        "Philips",
+        "Panasonic",
+        "Apple",
+        "Xiaomi",
+        "OnePlus",
+        "Pampers",
+        "Chicco",
+        "Johnson's",
+        "L'Oréal",
+        "Nivea",
+        "Maybelline",
+        "IKEA",
+        "Ashley",
+        "Home Center",
+        "Decathlon",
+        "Puma",
+        "Under Armour",
+        "Fossil",
+        "Casio",
+        "Rolex"
+    ];
+    $brandLogos = [
+        "https://logo.clearbit.com/samsung.com",
+        "https://logo.clearbit.com/sony.com",
+        "https://logo.clearbit.com/lg.com",
+
+        "https://logo.clearbit.com/nike.com",
+        "https://logo.clearbit.com/adidas.com",
+        "https://logo.clearbit.com/levis.com",
+
+        "https://logo.clearbit.com/zara.com",
+        "https://logo.clearbit.com/hm.com",
+        "https://logo.clearbit.com/forever21.com",
+
+        "https://logo.clearbit.com/bosch.com",
+        "https://logo.clearbit.com/philips.com",
+        "https://logo.clearbit.com/panasonic.com",
+
+        "https://logo.clearbit.com/apple.com",
+        "https://logo.clearbit.com/mi.com",
+        "https://logo.clearbit.com/oneplus.com",
+
+        "https://logo.clearbit.com/pampers.com",
+        "https://logo.clearbit.com/chicco.com",
+        "https://logo.clearbit.com/johnsonsbaby.com",
+
+        "https://logo.clearbit.com/loreal.com",
+        "https://logo.clearbit.com/nivea.com",
+        "https://logo.clearbit.com/maybelline.com",
+
+        "https://logo.clearbit.com/ikea.com",
+        "https://logo.clearbit.com/ashleyfurniture.com",
+        "https://logo.clearbit.com/homecentre.com",
+
+        "https://logo.clearbit.com/decathlon.com",
+        "https://logo.clearbit.com/puma.com",
+        "https://logo.clearbit.com/underarmour.com",
+
+        "https://logo.clearbit.com/fossil.com",
+        "https://logo.clearbit.com/casio.com",
+        "https://logo.clearbit.com/rolex.com"
+    ];
+
+    for ($i = 0; $i < 30; $i++) {
+        Brand::create([
+            'name' => "$brands[$i]",
+            'logo' => "$brandLogos[$i]"
+        ]);
+    }

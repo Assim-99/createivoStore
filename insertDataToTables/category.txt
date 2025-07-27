@@ -1,0 +1,20 @@
+    $categories = [
+    "Electronics",
+    "Men's Clothing",
+    "Women's Clothing",
+    "Home Appliances",
+    "Mobiles & Tablets",
+    "Baby Products",
+    "Beauty & Personal Care",
+    "Furniture",
+    "Sports Equipment",
+    "Watches & Accessories"
+];
+
+  for ($i = 0; $i < count($categories); $i++) {
+        Category::create([
+            'name' => "$categories[$i]",
+            'manager' => 2 ,
+        ]);
+    }
+});

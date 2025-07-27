@@ -33,16 +33,16 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="products" data-toggle="collapse" data-target="#collapseTwo"
+                <a class="nav-link collapsed" href="/admin/items" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fa-solid fa-shop"></i>
-                    <span> Products </span>
+                    <span> Items </span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header"> Action  :</h6>
-                        <a class="collapse-item" href="products">Show Items</a>
-                        <a class="collapse-item" href="products?add"> Add New Item  </a>
+                        <a class="collapse-item" href="/admin/items">Show Items</a>
+                        <a class="collapse-item" href="/items"> Add New Item  </a>
                     </div>
                 </div>
             </li>

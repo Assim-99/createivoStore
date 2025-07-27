@@ -2,6 +2,9 @@
 
 use App\Http\Controllers\LoginAdminController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ItemsController;
+
+
 
 
 
@@ -27,6 +30,11 @@ Route::prefix('admin')->middleware('auth')->group(function () {
 
     Route::post('logout', [LoginAdminController::class, 'logout']);
 
-    require_once 'products.php';
+    // ------------ items ------------- ;
+    Route::get('items', [ItemsController::class, 'index']);
+    Route::get('items/show/{id}', [ItemsController::class, 'show']);
+    Route::get('items/create', [ItemsController::class, 'create']);
+    Route::post('items/edit/{id}', [ItemsController::class, 'edit']);
+    // ------------ /// ------------- ;
 
 });

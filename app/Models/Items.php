@@ -18,6 +18,9 @@ class Items extends Model
         'qantity' ,
         'image' ,
         'status', 
+        'brand_id',
+        'category_id',
+        'created_by',
     ];
 
 
