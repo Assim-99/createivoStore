@@ -40,8 +40,8 @@ class ItemsFactory extends Factory
                 "https://dummyimage.com/300x300/ee0/fff&text=Product+15",
                 ]),
             'status' => fake()->randomElement(['active', 'inactive']),
-            'created_by' => 3 ,
-            'category_id' => rand(1,10),
+            'created_by' => 6 ,
+            'category_id' => rand(2,11),
             'brand_id' => rand(1,30),
         ];
     }

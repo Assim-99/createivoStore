@@ -73,7 +73,7 @@
             <div class="col-md-6">
                 <div class="my-2">
                     <label for="itemprice" class="text-secondary-emphasis"> Price : </label>
-                    <input value="{{ $item->price }}" id="itemprice" type="number" class="form-control"
+                    <input value="{{$item->price}}" id="itemprice" type="number" step="any"  class="form-control"
                         placeholder="Price" name="price">
                     @error('price')
                         <div class="alert alert-danger my-2 fw-bold text-center">
@@ -108,7 +108,7 @@
             <div class="col-md-6">
                 <div class="my-2">
                     <label for="quantity" class="text-secondary-emphasis"> Qantity : </label>
-                    <input value="{{ $item->quantity }}" id="quantity" type="number" min="1" class="form-control"
+                    <input value="{{ $item->quantity }}" id="quantity" type="number" class="form-control"
                         placeholder="Qantity" name="quantity">
                     @error('quantity')
                         <div class="alert alert-danger my-2 fw-bold text-center">

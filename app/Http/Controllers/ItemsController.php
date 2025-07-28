@@ -27,7 +27,8 @@ class ItemsController extends Controller
     function edit( EditItemsInfo $request , $id)
     {
         $request -> validated() ;
-        $data = $request -> except('_token');
-        $item = Items::where('id' , $id) -> update( $data);
+        $item = $request -> except('_token');
     }
+
+    
 }
