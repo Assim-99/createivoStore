@@ -1,4 +1,5 @@
 @include('admin/components/header')
+
 <!-- Page Wrapper -->
 <div id="wrapper">
 

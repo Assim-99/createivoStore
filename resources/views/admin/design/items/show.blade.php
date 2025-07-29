@@ -8,18 +8,25 @@
     <div class="row">
 
         @foreach ($items as $item)
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4 col-xl-3">
 
-                <div class="card my-2">
-                    <img  style="height: 230px" src="{{ $item->image }}" class="card-img-top w-100 " alt="...">
-                    <div class="card-body text-center">
+                <div class="card my-2 bg-dark bg-gradient overflow-auto" style="height: 220px;">
 
-                        <h5 class="card-title"> {{ $item->name}} </h5>
+                    <div class="card-body text-center d-flex flex-column justify-content-evenly">
 
-                        <p style="height: 50px">{{ $item->short_description}} </p>
+                        <b class="card-title text-light"> <span class="text-danger"> Item: </span>{{ ucwords( $item->name)}} </b>
 
+                          <b class="card-title text-light"> <span class="text-danger"> Status: </span>{{ucwords($item->status)}} </b>
+
+                            <b class="card-title text-light"> <span class="text-danger"> Price: </span>{{$item->price}} EGP </b>
+
+                            
+                            <b class="card-title text-light"> <span class="text-danger"> quantity: </span>{{$item-> quantity}} Peice </b>
+
+            
                         <div class="d-flex justify-content-center">
-                            <a href="items/show/{{$item-> id}}" class="btn btn-primary fw-bold px-5"> Show Detelis  </a>
+                            <a href="items/show/{{$item-> id}}" class="btn bg-danger bg-gradient px-5 text-light "> <b>Show Detelis</b>  </a>
+
                         </div>
                     </div>
                 </div>

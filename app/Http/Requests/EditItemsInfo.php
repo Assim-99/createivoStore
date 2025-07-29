@@ -30,7 +30,7 @@ class EditItemsInfo extends FormRequest
 
             'price' => 'required|numeric|min:0',
 
-            'qantity' => 'required|integer|min:0',
+            'quantity' => 'required|integer|min:0',
 
             'status' => 'required|in:active,inactive',
 
@@ -60,11 +60,9 @@ class EditItemsInfo extends FormRequest
                 'price.numeric' => 'السعر لازم يكون رقم.',
                 'price.min' => 'السعر مينفعش يكون أقل من 0.',
 
-                'qantity.required' => 'اكتب الكمية المتاحة.',
-                'qantity.integer' => 'الكمية لازم تكون عدد صحيح.',
-                'qantity.min' => 'الكمية لازم تكون 0 أو أكتر.',
-
-            
+                'quantity.required' => 'اكتب الكمية المتاحة.',
+                'quantity.integer' => 'الكمية لازم تكون عدد صحيح.',
+                'quantity.min' => 'الكمية لازم تكون 0 أو أكتر.',
             ];
     }
 }
