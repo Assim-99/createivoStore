@@ -23,5 +23,22 @@ class Items extends Model
         'created_by',
     ];
 
+    function category()
+    {
+        return $this -> belongsTo(Category::class);
+    }
+
+       function brand()
+    {
+        return $this -> belongsTo(Brand::class);
+    }
+
+        function createdBy()
+    {
+        return $this -> belongsTo(User::class , 'created_by' ,'id');
+    }
+
+
+
 
 }

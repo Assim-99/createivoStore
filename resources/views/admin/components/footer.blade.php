@@ -45,23 +45,21 @@
 
 
 
-<!-- Bootstrap core JavaScript-->
 
-<script src="{{ asset('admin/vendor/bootstrap/js/bootstrap.bundle2.min.js') }}"></script>
-<script src="{{ asset('admin/vendor/jquery/jquery.min.js') }}"></script>
+<!-- Bootstrap core JavaScript-->
+<script src="{{asset('admin/vendor/jquery/jquery-3.7.1.min.js')}}"></script>
+<script src="{{asset('admin/vendor/datatables/bootstrap.bundle.min.js')}}"></script>
+
+
+<!-- Datatables core JavaScript-->
+<script src="{{asset('admin/vendor/datatables/datatables.min.js')}}"></script>
 
 <!-- Core plugin JavaScript-->
-<script src="{{ asset('admin/vendor/jquery-easing/jquery.easing.min.js') }}"></script>
+<script src="{{ asset('admin/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
 
 <!-- Custom scripts for all pages-->
-<script src="{{ asset('admin/js/sb-admin-2.min.js') }}"></script>
-
-<!-- Page level plugins -->
-<script src="{{ asset('admin/vendor/chart.js/Chart.min.js') }}"></script>
-
-<!-- Page level custom scripts -->
-<script src="{{ asset('admin/js/demo/chart-area-demo.js') }}"></script>
-<script src="{{ asset('admin/js/demo/chart-pie-demo.js') }}"></script>
+<script src="{{asset('admin/js/sb-admin-2.min.js')}}"></script>
+<script src="{{asset('admin/js/main.js')}}"></script>
 
 </body>
 

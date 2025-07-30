@@ -13,7 +13,8 @@ class ItemsController extends Controller
 
     function index()
     {
-        $items = Items::simplePaginate(16);
+        $items = Items::all();
+
         return view('admin.design.items.show', get_defined_vars());
     }
 
@@ -22,13 +23,21 @@ class ItemsController extends Controller
         $item = Items::findOrFail($id);
         $categories = Category::pluck('name', 'id');
         $brands = Brand::pluck('name', 'id');
-        return view('admin.design.items.itemPage', get_defined_vars());
+        return view('admin.design.items.update', get_defined_vars());
     }
 
     function editInfo(EditItemsInfo $request, $id)
     {
         $request->validated();
         $status = Items::where('id', $id)->update($request->except('_token'));
-        return response('ok' , 200)  ;
+        return response('ok', 200);
+    }
+
+
+    function create()
+    {
+        $categories = Category::pluck('name', 'id');
+        $brands = Brand::pluck('name', 'id');
+        return view('admin.design.items.create' , get_defined_vars());
     }
 }

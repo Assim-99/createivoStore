@@ -13,4 +13,7 @@ class Brand extends Model
         'logo',
     ];
     
+      function items(){
+        return $this -> hasMany(Items::class);
+    }
 }

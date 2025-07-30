@@ -37,6 +37,8 @@ Route::prefix('admin')->middleware('auth')->group(function () {
 
     Route::get('items/show/{id}', [ItemsController::class, 'show']);
 
+
+    // --------- ajax request -------- ;
     Route::post('items/edit/{id}', [ItemsController::class, 'editInfo']);
 
     // ------------ /// ------------- ;

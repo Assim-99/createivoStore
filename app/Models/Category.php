@@ -12,4 +12,8 @@ class Category extends Model
         'name' ,
         'manager',
     ];
+
+    function items(){
+        return $this -> hasMany(Items::class);
+    }
 }

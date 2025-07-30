@@ -45,4 +45,9 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    function items()
+    {
+        return $this->hasMany(Items::class , 'created_by','id');
+    }
 }
